@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<HTml lang="ES">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collage de Imágenes</title>
+  <style>
+    body {
+      background-color: #f3f3f3;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #3f51b5;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 10px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .container img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Galeria de Imágenes</h1>
+
+  <div class="container">
+    <img src="imagenes2/galaxia.png" alt="Galaxia">
+    <img src="imagenes2/lago.png" alt="Lago">
+    <img src="imagenes2/lago2.png" alt="Lago 2">
+    <img src="imagenes2/OIP (2).png" alt="Imagen 4">
+    <img src="imagenes2/camalion.png" alt="Camaleón">
+    <img src="imagenes2/leopardo.png" alt="Leopardo">
+    <img src="imagenes2/osos.png" alt="Osos">
+    <img src="imagenes2/paisaje.png" alt="Paisaje">
+    <img src="imagenes2/panda.png" alt="Panda">
+    <img src="imagenes2/puercuespin.png" alt="Puercoespín">
+  </div>
+
+</body>
+</html>

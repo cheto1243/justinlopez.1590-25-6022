@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual Técnico del Sitio Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background: #f0f8ff;
+      color: #333;
+    }
+
+    h1, h2 {
+      color: #1a5276;
+    }
+
+    .codigo {
+      background-color: #eaf2f8;
+      padding: 15px;
+      margin: 15px 0;
+      border-left: 5px solid #3498db;
+      white-space: pre-wrap;
+      font-family: monospace;
+    }
+
+    ul {
+      background-color: #f9fbfc;
+      padding: 10px 20px;
+      border-left: 4px solid #2e86c1;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Manual Técnico del Sitio Web Personal</h1>
+
+  <h2>1. Estructura general del sitio</h2>
+  <p>Se utilizó un diseño basado en <code>&lt;frameset&gt;</code>, el cual permite dividir la pantalla en dos secciones: un menú a la izquierda y un área de contenido a la derecha.</p>
+
+  <div class="codigo">
+&lt;frameset cols="20%,80%"&gt;
+  &lt;frame src="menu.html"&gt;
+  &lt;frame name="contenido"&gt;
+&lt;/frameset&gt;
+  </div>
+
+  <h2>2. Menú</h2>
+  <p>El archivo <code>menu.html</code> contiene los enlaces que permiten navegar entre las distintas secciones del sitio. Cada enlace carga una página distinta en el marco llamado <code>contenido</code>.</p>
+
+  <div class="codigo">
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="hoja.html" target="contenido"&gt;Hoja de Vida&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="tabla.html" target="contenido"&gt;Tabla de Notas&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="galeria.html" target="contenido"&gt;Galería de Imágenes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="video.html" target="contenido"&gt;Video&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="manual.html" target="contenido"&gt;Manual Técnico&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+  </div>
+
+  <h2>3. Hoja de Vida</h2>
+  <p>Esta sección muestra los datos personales del alumno en formato estructurado.</p>
+
+  <div class="codigo">
+&lt;h2&gt;Nombre: Justin Estuardo José López Raymundo&lt;/h2&gt;
+&lt;h2&gt;Fecha de nacimiento: 2 de julio de 2007&lt;/h2&gt;
+&lt;h2&gt;Dirección: Oratorio, Santa Rosa&lt;/h2&gt;
+&lt;h2&gt;Teléfono: 4181-5681&lt;/h2&gt;
+&lt;h2&gt;Correo electrónico: jlopez150@miumg.edu.gt&lt;/h2&gt;
+  </div>
+
+  <h2>4. Tabla con notas</h2>
+  <p>Se creó una tabla que muestra los nombres de los cursos cursados y sus notas de primer y segundo parcial.</p>
+
+  <div class="codigo">
+&lt;table border="1"&gt;
+  &lt;tr&gt;&lt;th&gt;Curso&lt;/th&gt;&lt;th&gt;1er Parcial&lt;/th&gt;&lt;th&gt;2do Parcial&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Matemática&lt;/td&gt;&lt;td&gt;85&lt;/td&gt;&lt;td&gt;90&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Informática&lt;/td&gt;&lt;td&gt;88&lt;/td&gt;&lt;td&gt;92&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+  </div>
+
+  <h2>5. Galería de imágenes</h2>
+  <p>La galería se diseñó usando imágenes almacenadas localmente en una carpeta llamada <code>imagenes2</code>. A continuación, se muestra cómo insertar varias imágenes.</p>
+
+  <div class="codigo">
+&lt;img src="imagenes2/galaxia.png" alt="galaxia"&gt;
+&lt;img src="imagenes2/lago.png" alt="lago"&gt;
+&lt;!-- Se repite hasta tener al menos 10 imágenes --&gt;
+  </div>
+
+  <h2>6. Video de YouTube</h2>
+  <p>Para insertar un video desde YouTube se usó un <code>&lt;iframe&gt;</code> como se muestra a continuación:</p>
+
+  <div class="codigo">
+&lt;iframe width="560" height="315"
+src="https://www.youtube.com/embed/EvKm8yhM7V8"
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+  </div>
+
+  <h2>7. Herramientas utilizadas</h2>
+  <ul>
+    <li>Editor de código: Visual Studio Code</li>
+    <li>Navegador: Google Chrome</li>
+    <li>Lenguajes: HTML, CSS</li>
+    <li>Recursos externos: YouTube</li>
+  </ul>
+
+  <h2>8. Conclusión</h2>
+  <p>
+    Este sitio web fue desarrollado como parte del proceso formativo de la carrera de Ingeniería en Sistemas. 
+    Su construcción permitió aplicar conocimientos básicos de HTML y CSS, además de comprender el uso de marcos, 
+    tablas, inserción de multimedia y navegación entre páginas. Este tipo de proyectos fortalece las habilidades prácticas 
+    de los estudiantes y representa una base sólida para el desarrollo de aplicaciones web más avanzadas en el futuro.
+  </p>
+
+</body>
+</html>
+
